@@ -56,7 +56,7 @@ input[id="submit"] {
 input[type="text"] {
     border: 2px solid #1c3d5a;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 128px;
     outline: none;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     transition: border-color 0.3s ease;
