@@ -16,6 +16,7 @@ body {
     max-width: 600px;
     border: 1px solid #33415c; /* Outline color */
     position: relative;
+    flex-direction: column;
 }
 
 input[type="button"] {
