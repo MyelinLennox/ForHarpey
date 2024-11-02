@@ -8,25 +8,31 @@ body {
     margin: 0;
 }
 
-
 .textContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 90%;
-    max-width: 50vw;
+    max-width: 1000px;
     margin: auto;
 }
 
 h1 {
-    font-size: 3vw;
+    font-size: 400%; /* Default font size */
     margin: 0;
     text-align: center;
 }
 
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 300%; /* Increase font size for smaller screens */
+    }
+}
+
 p {
-    font-size: 1.5vw;
+    font-size: 200%;
     text-align: center;
     color: #7b8a97;
     max-width: 90%;
@@ -84,4 +90,15 @@ input[type="button"] {
     margin: 3vh auto;
     display: block;
     align-self: center;
+}
+
+/* Additional media query for very small screens */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 8vw; /* Further increase font size for very small screens */
+    }
+
+    p {
+        font-size: 2vw; /* Adjust paragraph font size if needed */
+    }
 }
