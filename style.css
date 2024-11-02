@@ -1,70 +1,87 @@
 body {
+    overflow: hidden; /* This will disable both horizontal and vertical scrolling */
     background-color: #0d1b2a;
     color: #ffffff;
     font-family: Arial, sans-serif;
     text-align: center;
-    padding: 20px;
+    padding: 3vh;
+    margin: 0;
+}
+
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 50vw;
+    margin: auto;
+}
+
+h1 {
+    font-size: 3vw;
+    margin: 0;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5vw;
+    text-align: center;
+    color: #7b8a97;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 .panel {
     display: flex;
     flex-direction: column;
     background-color: #1b263b;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    padding: 10px;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
-    border: 1px solid #33415c;
-    position: relative;
-    gap: 10px;
+    border-radius: 2vh;
+    box-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.3);
+    padding: 3vh;
+    max-width: 25vh; /* Adjusted width */
+    border: 0.3vh solid #33415c;
+    gap: 2vh;
+    margin: 3vh auto; /* Centered the panel horizontally */
 }
 
-input[id="up"],
-input[id="down"] {
+input[type="image"],
+input[type="count"] {
+    width: 100%; /* Match the width of the panel */
+    max-width: 20vh; /* Consistent max-width */
+    height: auto;
     background-color: #415a77;
-    border: 2px solid #1c3d5a;
-    border-radius: 10px;
-    color: #ffffff;
-    font-size: 128px;
+    border: none;
+    border-radius: 2vh;
+    text-align: center;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.3);
+    align-self: center;
 }
 
-
-input[id="up"]:hover,
-input[id="down"]:hover {
-    background-color: #527ba0;
-    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
-}
-
-input[id="submit"] {
-    background-color: #415a77;
-    border: 2px solid #1c3d5a;
-    border-radius: 10px;
-    color: #ffffff;
-    font-size: 32;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-input[type="text"] {
-    border: 2px solid #1c3d5a;
-    border-radius: 10px;
-    font-size: 128px;
+input[type="count"] {
+    border: 0.4vh solid #1c3d5a;
+    font-size: 4vw; /* Adjusted font size */
     outline: none;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    transition: border-color 0.3s ease;
     background-color: #1b263b;
     color: #ffffff;
+    padding: 1vh;
+    align-self: center;
 }
 
-input[type="text"]:focus {
-    border-color: #527ba0;
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
+input[type="button"] {
+    font-size: 3vw;
+    background-color: #415a77;
+    border: 0.4vh solid #1c3d5a;
+    border-radius: 2vh;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.3);
+    padding: 1.5vh 3vh;
+    margin: 3vh auto;
+    display: block;
+    align-self: center;
 }

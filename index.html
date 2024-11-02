@@ -7,12 +7,15 @@
     </head>
     
     <body>
-        <h1>Create Bot User</h1>
+        <div class="textContainer">
+            <h1 id="head">Create Bot User</h1>
+            <p id="message">For each bot you add to the count, an AI will choose a randomly generated response to each question and submit.</p>
+        </div>
 
         <div class="panel">
-            <input type="button" id="up"/>
-            <input type="text" id="text" value="0" readonly />
-            <input type="button" id="down"/>
+            <input type="image" id="up" src="navigation_n.svg"/>
+            <input type="count" id="count" value="0" readonly />
+            <input type="image" id="down" src="navigation_s.svg"/>
         </div>
 
         <input type="button" value="Send" id="submit" />
