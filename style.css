@@ -55,7 +55,7 @@ p {
 input[type="image"],
 input[type="count"] {
     width: 100%; /* Match the width of the panel */
-    max-width: 20vh; /* Consistent max-width */
+    max-width: 12vh; /* Consistent max-width */
     height: auto;
     background-color: #415a77;
     border: none;
@@ -69,7 +69,7 @@ input[type="count"] {
 
 input[type="count"] {
     border: 0.4vh solid #1c3d5a;
-    font-size: 4vw; /* Adjusted font size */
+    font-size: 10vw; /* Adjusted font size */
     outline: none;
     background-color: #1b263b;
     color: #ffffff;
@@ -78,7 +78,7 @@ input[type="count"] {
 }
 
 input[type="button"] {
-    font-size: 3vw;
+    font-size: 5vh;
     background-color: #415a77;
     border: 0.4vh solid #1c3d5a;
     border-radius: 2vh;
@@ -87,7 +87,7 @@ input[type="button"] {
     transition: all 0.3s ease;
     box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.3);
     padding: 1.5vh 3vh;
-    margin: 3vh auto;
+    margin: 1vh auto;
     display: block;
     align-self: center;
 }
